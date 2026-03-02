@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* font-variation-settings:"wdth" 100; */
+}
+
+:root {
+    --bg-color-1: rgb(31, 29, 29);
+    --text-color-1: rgb(255, 255, 255);
+}
+
+.container {
+    background-color: black;
+    height: 912px;
+    width: 98.9vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 97%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.topleft {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 40%;
+}
+
+.home {
+    background-color: var(--bg-color-1);
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+
+}
+
+.searchbar {
+    display: flex;
+    height: 45px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: var(--bg-color-1);
+}
+
+.searchbar input {
+    background-color: var(--bg-color-1);
+    border: none;
+    width: 68%;
+    height: 40px;
+    color: var(--text-color-1);
+    font-size: 18px;
+}
+
+.searchbar input::placeholder {
+    color: var(--text-color-1);
+    font-size: 18px;
+}
+
+.topright {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.preimum {
+    background-color: var(--text-color-1);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.installapp {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-color-1);
+    background-color: black;
+    border: none;
+}
+
+.whatsnew {
+    background-color: black;
+    border: none;
+}
+
+.user {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color-1);
+    height: 40px;
+    width: 40px;
+    background-color: rgb(72, 212, 72);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    height: 70%;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.left {
+    background-color: var(--bg-color-1);
+    width: 30%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.leftnavbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.library {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.createbtn {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.create {
+    background-color: var(--bg-color-1);
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    width: 90px;
+    background-color: rgb(83, 81, 81);
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.expand {
+    background-color: var(--bg-color-1);
+    border: none;
+    margin: 10px 0;
+}
+
+.lowerbar-1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.x{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.lowerbar-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 0 30px;
+}
+
+.left-search{
+    background-color: var(--bg-color-1);
+    border: none;
+}
+
+.recent{
+    background-color: var(--bg-color-1);
+    border: none;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.center{
+    width: 66%;
+    height: 100%;
+    background-color: var(--bg-color-1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.right{
+    width: 30%;
+    height: 70%;
+    background-color: var(--bg-color-1);
+    border-radius: 8px;
+}
+
+.centernavbar{
+    display: flex;
+    align-items: center;
+    padding: 5px 0 0 30px;
+    gap: 20px;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+}
+
+.centernavbar button{
+    background-color: rgba(255, 255, 255, 0.189);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.musicplaylistbox{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.playlist{
+    width: 45%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.107);
+    color: white;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    border-radius: 5px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.playlist img{
+    height: 50px;
+    align-self:flex-start;
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+}
+
+.leftplaylistbox{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    overflow-y: auto;
+}
+
+.leftplaylist{
+    display: flex;
+    color: white;
+    width: 100%;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.leftplaylist img{
+    height: 55px;
+    align-self: self-start;
+    border-radius: 50px;
+}
+
+.text_playlist p:nth-child(2){
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.544);
+}
+
+.text_playlist{
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.leftplaylist:hover{
+    background-color: rgba(255, 255, 255, 0.232);
+    border-radius: 5px;
+}
+
+.playbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    height: 100px;
+
+}
+
+.songinfo{
+    display: flex;
+    color: white;
+    gap: 15px;
+    width: 20%;
+    align-items: center;
+}
+
+.songinfo img{
+    height: 70px;
+    border-radius: 5px;
+
+}
+
+.playbtns{ 
+    width: 30%;
+}
+
+.soundandbtns{
+    width: 25%;
+}
+
+.songname{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.songname p:nth-child(2){
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.387);
+}
+
+.mainbtns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainbtns button{
+    background-color: black;
+    border: none;
+}
+
+.mainbtns button:nth-child(3){
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 40px;
+    padding: 5px;
+}
+

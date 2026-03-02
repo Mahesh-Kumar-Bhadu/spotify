@@ -1,0 +1,26 @@
+/* Custom scrollbar for WebKit (Chrome, Edge, Safari) */
+.scroll-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: #1e1e1e; /* dark track */
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #888;   /* gray thumb */
+  border-radius: 4px;
+  border: 2px solid #1e1e1e; /* inner padding using border */
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
